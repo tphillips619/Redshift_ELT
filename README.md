@@ -4,9 +4,13 @@ Build an ETL pipeline (technically it is 'ELT') that extracts JSON data from S3,
 
 # Files
 **create_table.py**  Creates fact and dimension tables for the star schema in Redshift.
+
 **etl.py** Loads data from S3 into staging tables on Redshift.  Then process that data into analytics tables on Redshift.
+
 **sql_queries.py** Central script containing all SQL statements
+
 **run.ipynb** Interactive notebook that utilizes boto3 to programmatically create the Redshift cluster and start the ETL process by running create_table.py and etl.py
+
 **dwh.cfg** This file contains project-wide parameters. HOST and ARN parameters should be copied from the AWS console and pasted here per instructions in run.ipynb
 
 # How to Run
