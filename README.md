@@ -2,6 +2,8 @@
 
 Build an ETL pipeline (technically it is 'ELT') that extracts JSON data from S3, stages it in Redshift, and transforms data into a set of dimensional tables for the analytics team.
 
+![Schema](songplay_star_schema.png)
+
 # Files
 **create_table.py**  Creates fact and dimension tables for the star schema in Redshift.
 
