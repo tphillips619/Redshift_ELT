@@ -101,8 +101,7 @@ CREATE TABLE IF NOT EXISTS artists (
 
 time_table_create = ("""
 CREATE TABLE IF NOT EXISTS time (
-  time_id INT IDENTITY(0,1) PRIMARY KEY,
-  start_time TIMESTAMP NOT NULL, 
+  start_time TIMESTAMP PRIMARY KEY, 
   hour INT, 
   day INT,
   week INT, 
